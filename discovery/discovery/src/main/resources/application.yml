@@ -1,0 +1,22 @@
+spring:
+ application:
+  name: discovery-server
+  
+# config:
+#  import: optional:configServer:http://localhost:9090 
+
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    
+#management:
+# endpoints:
+#  web:
+#   exposure:
+#    include:*   
